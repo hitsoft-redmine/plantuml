@@ -15,7 +15,7 @@ module PlantumlHelper
   end
 
   def self.plantuml_file(name, extension)
-    File.join(Rails.root, 'files', "#{name}#{extension}")
+    File.join(Rails.root, 'files', 'plantuml', "#{name}#{extension}")
   end
 
   def self.plantuml(text, args)
